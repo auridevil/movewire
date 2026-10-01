@@ -1,0 +1,23 @@
+{
+  "name": "movewire",
+  "version": "0.1.0",
+  "description": "Wire an Ableton Move to JavaScript: Live-style handshake over Web MIDI / any MIDI transport, typed events for pads, knobs, buttons and wheel, LED control. Zero dependencies.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./web-midi": "./src/web-midi.js"
+  },
+  "files": ["src", "docs", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "check": "for f in src/*.js test/*.js; do node --check $f || exit 1; done"
+  },
+  "engines": { "node": ">=18" },
+  "repository": { "type": "git", "url": "git+https://github.com/auridevil/movewire.git" },
+  "bugs": { "url": "https://github.com/auridevil/movewire/issues" },
+  "homepage": "https://github.com/auridevil/movewire#readme",
+  "keywords": ["ableton", "move", "midi", "web-midi", "controller", "sysex", "control-surface", "leds"],
+  "author": "Aureliano Bergese",
+  "license": "MIT"
+}
